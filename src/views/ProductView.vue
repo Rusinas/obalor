@@ -58,7 +58,7 @@ export default {
                     title: 'Error loading product :('
                 })
             } finally {
-                // this.loading = false
+                this.loading = false
             }
         }
     }
