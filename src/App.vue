@@ -29,9 +29,10 @@ export default {
     flex-direction: column
     align-items: center
     width: 100%
-    padding: 0 20px 50px
+    padding: 0 20px 30px
 
-    
+    @include for-phone
+        padding: 0 20px 50px
 
 .app-wrapper
     width: 100% 
