@@ -72,9 +72,6 @@ export default {
                 this.debouncedGetProducts()
             }
         },
-        // 'pagination.offset' () {
-        //     this.getProducts()
-        // }
     },
     methods: {
         async getProducts() {
