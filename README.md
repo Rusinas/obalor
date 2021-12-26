@@ -1,8 +1,9 @@
-# obalor-test2
+# obalor test app
 
+Всё стандартно:
 ## Project setup
 ```
-npm install
+npm i
 ```
 
 ### Compiles and hot-reloads for development
