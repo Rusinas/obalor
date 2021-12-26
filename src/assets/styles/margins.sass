@@ -1,0 +1,29 @@
+$margins: 0, 1, 2, 3, 4, 5, 10, 15, 20, 25, 30, 35, 40
+
+@each $margin in $margins
+    // Margin all
+    .m-a-#{$margin}
+        margin: #{$margin}px
+    // Margin top
+    .m-t-#{$margin}
+        margin-top: #{$margin}px
+    // Margin bottom
+    .m-b-#{$margin}
+        margin-bottom: #{$margin}px
+    // Margin left
+    .m-l-#{$margin}
+        margin-left: #{$margin}px
+    // Margin right
+    .m-r-#{$margin}
+        margin-right: #{$margin}px
+    // Vertical margins
+    .m-v-#{$margin}
+        margin-top: #{$margin}px
+        margin-bottom: #{$margin}px
+    // Horizontal margins
+    .m-h-#{$margin}
+        margin-left: #{$margin}px
+        margin-right: #{$margin}px
+
+.m-none
+    margin: 0

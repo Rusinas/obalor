@@ -1,5 +1,5 @@
 {
-  "name": "obalor-test2",
+  "name": "obalor-test",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,14 +7,22 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "axios": "^0.24.0",
+    "debounce": "^1.2.1",
     "vue": "^2.6.11",
+    "vue-lazyload": "^1.3.3",
     "vue-router": "^3.2.0",
+    "vuesax": "^4.0.1-alpha.25",
     "vuex": "^3.4.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
+    "sass": "^1.45.1",
+    "sass-loader": "^10.2.0",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [

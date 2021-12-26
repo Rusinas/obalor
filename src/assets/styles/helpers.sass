@@ -1,0 +1,18 @@
+$gaps: 0, 5, 10, 15, 20, 25, 30, 35, 40
+
+@each $gap in $gaps
+    .gap-#{$gap}
+        gap: $gap * 1px
+
+.flex
+    display: flex
+
+.flex-column
+    display: flex
+    flex-direction: column
+
+.ai-center
+    align-items: center
+
+.w-100
+    width: 100%

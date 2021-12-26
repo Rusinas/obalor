@@ -1,32 +1,40 @@
-<template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+<template lang="pug">
+#app
+    .app-wrapper
+        Topbar
+        
+        transition(name="slide-fade" mode="out-in")
+            router-view(:key="$route.name")
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import Topbar from '@/components/Common/Topbar'
 
-#nav {
-  padding: 30px;
+export default {
+    name: 'App',
+    components: {
+        Topbar
+    },
+    beforeCreate() {
+        this.$store.dispatch('cart/getSavedCart')
+    }
 }
+</script>
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+<style lang="sass">
+@import '@/assets/styles/main.sass'
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+#app 
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    padding: 0 20px 50px
+
+    
+
+.app-wrapper
+    width: 100% 
+    max-width: 1300px
+
 </style>
